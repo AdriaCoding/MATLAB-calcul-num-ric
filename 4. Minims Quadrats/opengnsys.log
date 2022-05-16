@@ -1,0 +1,6 @@
+DEBUG 2019-10-30 12:13:32,535 Loading modules from ()
+DEBUG 2019-10-30 12:13:32,535 Found module class <class 'opengnsys.modules.client.OpenGnSys.OpenGnSysWorker'>
+DEBUG 2019-10-30 12:13:32,535 Modules: [u'opengnsys']
+DEBUG 2019-10-30 12:13:32,535 Activating module opengnsys
+DEBUG 2019-10-30 12:13:32,536 Activate invoked
+DEBUG 2019-10-30 12:13:32,536 Sending request for msg: 229(REQ_LOGIN), adria.lisa,en_US

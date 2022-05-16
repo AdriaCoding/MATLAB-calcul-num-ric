@@ -1,0 +1,6 @@
+DEBUG 2019-10-29 11:34:24,761 Loading modules from ()
+DEBUG 2019-10-29 11:34:24,761 Found module class <class 'opengnsys.modules.client.OpenGnSys.OpenGnSysWorker'>
+DEBUG 2019-10-29 11:34:24,761 Modules: [u'opengnsys']
+DEBUG 2019-10-29 11:34:24,762 Activating module opengnsys
+DEBUG 2019-10-29 11:34:24,762 Activate invoked
+DEBUG 2019-10-29 11:34:24,762 Sending request for msg: 229(REQ_LOGIN), claudia.rodes,en_US

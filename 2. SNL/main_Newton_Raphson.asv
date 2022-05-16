@@ -1,0 +1,22 @@
+clear; close all; clc;
+%x = [w0, w1, w2, z1]
+
+x0 = [2/5 ; 2/5 ; 2/5 ; 0.5];
+niter = 3;
+
+X = zeros(size(x0));
+xim1 = x0;
+
+f = @(x) [-1 + x(1)  + x(2) + x(3)/2;
+        -1/3 + x(1)  + x(2)*x(4).^2 ;
+        -1/5 + x(1)  + x(2)*x(4).^4 ;
+        -1/7 + x(1)  + x(2)*x(4).^6 ];
+    
+for i = 1:niter
+    xi = xim1 + -Jf(xim1)\f(xim1);
+    X = [X,xi];
+    xim1 = xi;
+end
+solbona = fsolve(f,x0)
+solnewt = X(:, end)
+r = norm(solbona - solmeva) / norm(solbona);
